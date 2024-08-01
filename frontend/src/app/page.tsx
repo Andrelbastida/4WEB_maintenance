@@ -3,6 +3,9 @@ import { Aside } from "./components/aside";
 import { Card } from "./components/card";
 import { FaBuilding } from "react-icons/fa";
 import { Tabela } from "./components/table";
+import { Grafico } from "./components/graphics";
+
+
 
 export default function Home() {
   const cards= [
@@ -18,9 +21,9 @@ export default function Home() {
     <div className="flex-1 flex">
       <Aside/>
       
-      <main className="flex-1 flex-col flex text-black" >
-        <h1 className="text-4xl font-bold uppercase w-full bg-white/40 p-6 text-center">Sistema de Gestão de Manutenção</h1>
-
+      <main className="flex-1 flex-col flex text-black max-h-svh" >
+        <h1 className="text-2xl font-bold uppercase w-full bg-white/80 p-3 text-center">Sistema de Gestão de Manutenção</h1>
+          
         <div>
           <div className="grid grid-cols-4 gap-4 p-6">
             {cards.map((props) => (
@@ -33,8 +36,12 @@ export default function Home() {
             ))}
           
           </div>
+          
         </div>
-        <Tabela/>
+        <div className="flex flex-1">
+          <Grafico/>
+          <Tabela/>
+        </div>
       </main>
       
     </div>
