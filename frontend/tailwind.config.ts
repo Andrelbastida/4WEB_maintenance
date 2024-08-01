@@ -46,15 +46,15 @@ const config: Config = {
         // dark mode
         'dark-tremor': {
           brand: {
-            faint: '#0B1229',
-            muted: colors.blue[950],
+            faint: '#fafbfc',
+            muted: colors.blue[100],
             subtle: colors.blue[800],
             DEFAULT: colors.blue[500],
             emphasis: colors.blue[400],
             inverted: colors.blue[950],
           },
           background: {
-            muted: '#131A2B',
+            muted: '#fafbfc',
             subtle: colors.gray[800],
             DEFAULT: colors.gray[900],
             emphasis: colors.gray[300],
