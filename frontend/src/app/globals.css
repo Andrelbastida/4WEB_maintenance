@@ -59,6 +59,33 @@ body {
   
   }
   
+  .form-data label{
+    display: block; 
+    font-size: 0.7rem; 
+    font-weight: 400; 
+    color: #4a5568; 
+  }
+  .form-data input{
+    margin-top: 0.rem; 
+    display: block; 
+    width: 15rem;
+    padding: 0.2rem; 
+    border: 1px solid #d1d5db; 
+    border-radius: 0.3rem; 
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    row-gap:10rem ;
+  }
+  .form-data input:focus {
+    outline: none; 
+    box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.5);
+  }
+  .form-data{
+    width: 70%;
+    display: grid;
+    grid-column:span 400px;
+    gap: 1rem;
+   
+  }
+  
 
 }
-/* px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider */
