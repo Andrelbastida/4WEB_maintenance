@@ -68,7 +68,7 @@ body {
   .form-data input{
     margin-top: 0.rem; 
     display: block; 
-    width: 15rem;
+    width: 18rem;
     padding: 0.2rem; 
     border: 1px solid #d1d5db; 
     border-radius: 0.3rem; 
@@ -80,10 +80,10 @@ body {
     box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.5);
   }
   .form-data{
-    width: 70%;
+    width: 80%;
     display: grid;
     grid-column:span 400px;
-    gap: 1rem;
+    
    
   }
   
