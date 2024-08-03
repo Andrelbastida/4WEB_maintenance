@@ -8,7 +8,7 @@ import { FaBuilding } from 'react-icons/fa';
 // Pagina de Maintenance
 
 
-export default function Index(){
+export function CadastroMaquina(){
   const formulario=[
     {titulo:"Nome da Máquina"},
     {titulo:"Tipo"},
