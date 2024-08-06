@@ -58,6 +58,29 @@ body {
     letter-spacing: 0.05em; 
   
   }
+  .data-table tbody {
+    background-color: #ffffff;
+    max-height: 16rem; 
+    overflow-y: auto; 
+  }
+  
+  .icones-table {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+  .icones-table1 {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1.5rem;
+  }
+  .icone{
+    cursor: pointer;
+  }
+
+  .data-table tbody > tr + tr {
+    border-top: 1px solid #e5e7eb; 
+  }
   
   .form-data label{
     display: block; 
@@ -96,6 +119,7 @@ body {
   background-color: #3b82f6; 
   cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+  margin-left: 2rem;
 }
 
 .botao-data:hover {
@@ -114,9 +138,10 @@ body {
 
 }
 
-.paginaMaintenance-data{
-  width: 80%;
+.botoes-data{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: end;
+  justify-content:space-around;
 }
 }
