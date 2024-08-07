@@ -5,10 +5,11 @@ import { Footer } from '@/app/components/footer';
 import { Card } from '@/app/components/card';
 import { Aside } from '@/app/components/aside';
 import { FaBuilding } from 'react-icons/fa';
-// Pagina de Maintenance
+import { BotaoBtn } from '@/app/components/botaoBtn';
+import { IoCloudUpload } from 'react-icons/io5';
+// Pagina de Cadastro de Manutenção
 
-
-export function CadastroManutencao(){
+export default function CadastroManutencao(){
   const formulario=[
     {titulo:"Máquina"},
     {titulo:"Serial"},
@@ -21,8 +22,18 @@ export function CadastroManutencao(){
     {titulo:"Status da Manutenção"},
     {titulo:"Outros"},
     
-
-  ]
+  ];
+  const botoes = [
+    {
+      color: "white",
+      text: <div className="flex flex-1 gap-2"> <h4>Upload</h4> <IoCloudUpload /></div>,
+    },
+    {
+      color: "white",
+      text: "Enviar",
+    },
+    
+  ];
   return (
     <div className="h-screen flex flex-col">
       <div className="flex-1 flex">
@@ -33,7 +44,7 @@ export function CadastroManutencao(){
             Cadastro de Manutenção
           </h1>
           <div>
-          <form  className="space-y-4 form-data">
+          <form  className="space-y-2 form-data">
           {formulario.map((obj, index) => (
                             <div key={index}>
                               <label >{obj.titulo}</label>
@@ -43,9 +54,10 @@ export function CadastroManutencao(){
                            
                         ))}
            
-
-            <div>
-                <button className="w-full py-2 px-4 bg-indigo-600 text-white font-semibold rounded-md shadow-md hover:bg-indigo-700 focus:ring focus:ring-opacity-50 focus:ring-indigo-300">Submit</button>
+           <div className="">
+              {botoes.map((props) => (
+                <BotaoBtn color={props.color} text={props.text} />
+              ))}
             </div>
         </form>
           </div>
