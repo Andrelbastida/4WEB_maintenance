@@ -19,7 +19,7 @@ export function TesteTabela({ titulos, campos }: tabela) {
                 ))}
               </tr>
             </thead>
-            <tbody className="bg-white divide-y max-h-64 overflow-y-auto">
+            <tbody>
               {campos.map((obj, index) => (
                 <>
                   <tr key={index}>
